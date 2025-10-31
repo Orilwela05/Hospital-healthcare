@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Healthcare Hospital</title>
+  <link rel="stylesheet" href="../css/Style.css">
+  <script defer src="../JS/map.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./About_us.html">About</a></li>
+        <li><a href="./Service.html">Services</a></li>
+        <li><a href="./Department.html">Departments</a></li>
+        <li><a href="./enquiry.html">Enquiry</a></li>
+        <li><a href="./Contact_us.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<h1>Contact Us</h1>
+  <section class="contact-section">
+  <div class="contact-card">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+      <label for="contactEmail">Email:</label>
+      <input type="email" id="contactEmail" name="contactEmail" placeholder="Enter your email" required>
+
+      <label for="messageType">Message Type:</label>
+      <select id="messageType" name="messageType" required>
+        <option value="">--Select--</option>
+        <option value="feedback">Feedback</option>
+        <option value="support">Support</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div id="contactResponse"></div>
+  </div>
+</section>
+
+  <!-- Map Section -->
+  <section id="map-section">
+    <h2>Find Us</h2>
+   <div id="map"><iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29180.600242096163!2d29.412556474316403!3d-23.904683699999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d825af25aa95%3A0x821f231c1854436c!2sLimpopo%20Med%20Centre!5e0!3m2!1sen!2sza!4v1761737128232!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Healthcare Hospital.</p>
+  </footer>
+</body>
+</html>
+

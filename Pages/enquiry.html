@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Enquiry - Healthcare Hospital</title>
+  <meta name="description" content="Submit a service enquiry at Healthcare Hospital for services, departments, volunteering, or sponsorship opportunities.">
+  <meta name="keywords" content="Healthcare, Hospital, Enquiry, Services, Departments, Volunteering, Sponsorship">
+  <link rel="stylesheet" href="../css/Style.css">
+  <script defer src="../JS/contact validation and response.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Healthcare Hospital - Service Enquiry</h1>
+     <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./About_us.html">About</a></li>
+        <li><a href="./Service.html">Services</a></li>
+        <li><a href="./Department.html">Departments</a></li>
+        <li><a href="./enquiry.html">Enquiry</a></li>
+        <li><a href="./Contact_us.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="enquiry-section">
+    <h2>Submit Your Enquiry</h2>
+
+    <form id="enquiryForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Enter 10-digit phone number">
+
+      <label for="enquiryType">Type of Enquiry:</label>
+      <select id="enquiryType" name="enquiryType" required>
+        <option value="">--Select--</option>
+        <option value="service">Service Enquiry</option>
+        <option value="volunteer">Volunteering</option>
+        <option value="sponsor">Sponsorship</option>
+      </select>
+
+      <label for="department">Select Department:</label>
+      <select id="department" name="department" required>
+        <option value="">--Select Department--</option>
+        <option value="general-medicine">General Medicine</option>
+        <option value="emergency">Emergency</option>
+        <option value="maternity">Maternity & Neonatal</option>
+        <option value="pediatrics">Pediatrics</option>
+        <option value="surgery">Surgical Services</option>
+        <option value="radiology">Radiology & Imaging</option>
+        <option value="laboratory">Laboratory Services</option>
+      </select>
+
+      <label for="message">Message / Details:</label>
+      <textarea id="message" name="message" required placeholder="Enter your enquiry"></textarea>
+
+      <button type="submit">Submit Enquiry</button>
+    </form>
+
+    <div id="enquiryResponse"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Healthcare Hospital. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+

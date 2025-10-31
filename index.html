@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Hospital</title>
+  <meta name="description" content="Welcome to Healthcare Hospital – providing quality medical services, with specialized departments and expert care.">
+  <meta name="keywords" content="Healthcare, Hospital, Services, Departments, Doctors, Polokwane, Medi Clinic">
+  <link rel="stylesheet" href="./css/Style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Healthcare Hospital</h1>
+    <nav>
+      <ul>
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./Pages/About_us.html">About</a></li>
+        <li><a href="./Pages/Service.html">Services</a></li>
+        <li><a href="./Pages/Department.html">Departments</a></li>
+        <li><a href="./Pages/enquiry.html">Enquiry</a></li>
+        <li><a href="./Pages/Contact_us.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h2>Welcome to Healthcare Hospital</h2>
+    <div class="greeting-date-time">
+  <p id="greetingMessage"></p>
+</div>
+    <p>Providing exceptional healthcare services with professional care and advanced facilities in Polokwane Medi Clinic.</p>
+  </section>
+
+  <!-- DEPARTMENTS PREVIEW SECTION -->
+<section class="departments-preview">
+  <h2>Our Departments</h2>
+  <div class="departments-container">
+
+    <div class="department-card">
+      <img src="./Assets/pediatrics department.jpg" alt="Pediatrics Department">
+      <h3>Pediatrics</h3>
+      <p>Specialized care for infants, children, and adolescents.</p>
+     
+    </div>
+
+    <div class="department-card">
+      <img src="./Assets/surgical services department.jpg" alt="Surgery Department">
+      <h3>Surgical Services</h3>
+      <p>Advanced surgical procedures with post-operative care.</p>
+      
+    </div>
+
+    <div class="department-card">
+      <img src="./Assets/radiology and imaging department.jpg" alt="Radiology Department">
+      <h3>Radiology & Imaging</h3>
+      <p>State-of-the-art diagnostic imaging services.</p>
+    
+    </div>
+
+    <div class="department-card">
+      <img src="./Assets/laboratory department.jpg" alt="Laboratory Department">
+      <h3>Laboratory Services</h3>
+      <p>Comprehensive lab tests and diagnostics.</p>
+     
+    </div>
+
+    <div class="department-card">
+      <img src="./Assets/cardiology department.jpg" alt="Cardiology Department">
+      <h3>Cardiology</h3>
+      <p>Heart and vascular care with expert cardiologists.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Healthcare Hospital. All Rights Reserved.</p>
+    <div class="social-icons">
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/MulibanaMashuvho" target="_blank" class="social-icon facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/2727444695" target="_blank" class="social-icon whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Twitter -->
+  <a href="https://twitter.com/MulibanaMashuvho" target="_blank" class="social-icon twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+
+
+</section>
+
+  </footer>
+  <script>
+function updateGreeting() {
+  const now = new Date();
+  const hour = now.getHours();
+  let greeting;
+
+  // Determine greeting based on time
+  if (hour < 12) {
+    greeting = "Good Morning, Customer!";
+  } else if (hour < 18) {
+    greeting = "Good Afternoon, Customer!";
+  } else {
+    greeting = "Good Evening, Customer!";
+  }
+
+  // Format date and time
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+  const dateTime = now.toLocaleString('en-ZA', options);
+
+  // Display greeting + date/time
+  document.getElementById("greetingMessage").textContent = `${greeting} Today is ${dateTime}`;
+}
+
+// Update every second
+setInterval(updateGreeting, 1000);
+
+// Run immediately
+updateGreeting();
+</script>
+</body>
+</html>
+
+sdftgvhbnjk,ihikyhyiujlujus
