@@ -6,6 +6,10 @@
   <title>Healthcare Hospital</title>
   <meta name="description" content="Welcome to Healthcare Hospital – providing quality medical services, with specialized departments and expert care.">
   <meta name="keywords" content="Healthcare, Hospital, Services, Departments, Doctors, Polokwane, Medi Clinic">
+  
+  <!-- Font Awesome for Social Media Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="./css/Style.css">
   <script defer src="js/script.js"></script>
 </head>
@@ -29,108 +33,125 @@
   <section class="hero">
     <h2>Welcome to Healthcare Hospital</h2>
     <div class="greeting-date-time">
-  <p id="greetingMessage"></p>
-</div>
+      <p id="greetingMessage"></p>
+    </div>
     <p>Providing exceptional healthcare services with professional care and advanced facilities in Polokwane Medi Clinic.</p>
   </section>
 
   <!-- DEPARTMENTS PREVIEW SECTION -->
-<section class="departments-preview">
-  <h2>Our Departments</h2>
-  <div class="departments-container">
+  <section class="departments-preview">
+    <h2>Our Departments</h2>
+    <div class="departments-container">
+      <div class="department-card">
+        <img src="./Assets/pediatrics department.jpg" alt="Pediatrics Department">
+        <h3>Pediatrics</h3>
+        <p>Specialized care for infants, children, and adolescents.</p>
+      </div>
 
-    <div class="department-card">
-      <img src="./Assets/pediatrics department.jpg" alt="Pediatrics Department">
-      <h3>Pediatrics</h3>
-      <p>Specialized care for infants, children, and adolescents.</p>
-     
+      <div class="department-card">
+        <img src="./Assets/surgical services department.jpg" alt="Surgery Department">
+        <h3>Surgical Services</h3>
+        <p>Advanced surgical procedures with post-operative care.</p>
+      </div>
+
+      <div class="department-card">
+        <img src="./Assets/radiology and imaging department.jpg" alt="Radiology Department">
+        <h3>Radiology & Imaging</h3>
+        <p>State-of-the-art diagnostic imaging services.</p>
+      </div>
+
+      <div class="department-card">
+        <img src="./Assets/laboratory department.jpg" alt="Laboratory Department">
+        <h3>Laboratory Services</h3>
+        <p>Comprehensive lab tests and diagnostics.</p>
+      </div>
+
+      <div class="department-card">
+        <img src="./Assets/cardiology department.jpg" alt="Cardiology Department">
+        <h3>Cardiology</h3>
+        <p>Heart and vascular care with expert cardiologists.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ FAQ SECTION (Accordion) -->
+  <section class="accordion-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <button class="accordion">What are your visiting hours?</button>
+    <div class="accordion-content">
+      <p>Visiting hours are from 9:00 AM to 7:00 PM daily. Special permissions are allowed for critical patients.</p>
     </div>
 
-    <div class="department-card">
-      <img src="./Assets/surgical services department.jpg" alt="Surgery Department">
-      <h3>Surgical Services</h3>
-      <p>Advanced surgical procedures with post-operative care.</p>
-      
+    <button class="accordion">Do you offer emergency services?</button>
+    <div class="accordion-content">
+      <p>Yes, our emergency department is open 24/7 with experienced doctors and nurses ready to assist.</p>
     </div>
 
-    <div class="department-card">
-      <img src="./Assets/radiology and imaging department.jpg" alt="Radiology Department">
-      <h3>Radiology & Imaging</h3>
-      <p>State-of-the-art diagnostic imaging services.</p>
-    
+    <button class="accordion">Where are you located?</button>
+    <div class="accordion-content">
+      <p>We are located at Polokwane Medi Clinic, Limpopo, South Africa.</p>
+    </div>
+  </section>
+
+  <!-- ✅ GALLERY SECTION WITH LIGHTBOX -->
+  <section class="gallery">
+    <h2>Hospital additional information</h2>
+    <div class="gallery-container">
+      <img src="./Assets/floor plan.jpg" alt="floor plan" class="gallery-img">
+      <img src="./Assets/social worker office.jpg" alt="social worker office" class="gallery-img">
+      <img src="./Assets/patients.jpg" alt="patients" class="gallery-img">
     </div>
 
-    <div class="department-card">
-      <img src="./Assets/laboratory department.jpg" alt="Laboratory Department">
-      <h3>Laboratory Services</h3>
-      <p>Comprehensive lab tests and diagnostics.</p>
-     
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
     </div>
+  </section>
 
-    <div class="department-card">
-      <img src="./Assets/cardiology department.jpg" alt="Cardiology Department">
-      <h3>Cardiology</h3>
-      <p>Heart and vascular care with expert cardiologists.</p>
-    </div>
-
-  </div>
-</section>
-
+  
 
   <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 Healthcare Hospital. All Rights Reserved.</p>
     <div class="social-icons">
-  <!-- Facebook -->
-  <a href="https://www.facebook.com/MulibanaMashuvho" target="_blank" class="social-icon facebook">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-
-  <!-- WhatsApp -->
-  <a href="https://wa.me/2727444695" target="_blank" class="social-icon whatsapp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <!-- Twitter -->
-  <a href="https://twitter.com/MulibanaMashuvho" target="_blank" class="social-icon twitter">
-    <i class="fab fa-twitter"></i>
-  </a>
-</div>
-
-
-</section>
-
+      <a href="https://www.facebook.com/MulibanaMashuvho" target="_blank" class="social-icon facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/2727444695" target="_blank" class="social-icon whatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://twitter.com/MulibanaMashuvho" target="_blank" class="social-icon twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
   </footer>
+
+  <!-- ✅ GREETING SCRIPT -->
   <script>
-function updateGreeting() {
-  const now = new Date();
-  const hour = now.getHours();
-  let greeting;
+    function updateGreeting() {
+      const now = new Date();
+      const hour = now.getHours();
+      let greeting;
 
-  // Determine greeting based on time
-  if (hour < 12) {
-    greeting = "Good Morning, Customer!";
-  } else if (hour < 18) {
-    greeting = "Good Afternoon, Customer!";
-  } else {
-    greeting = "Good Evening, Customer!";
-  }
+      if (hour < 12) {
+        greeting = "Good Morning, Customer!";
+      } else if (hour < 18) {
+        greeting = "Good Afternoon, Customer!";
+      } else {
+        greeting = "Good Evening, Customer!";
+      }
 
-  // Format date and time
-  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
-  const dateTime = now.toLocaleString('en-ZA', options);
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+      const dateTime = now.toLocaleString('en-ZA', options);
 
-  // Display greeting + date/time
-  document.getElementById("greetingMessage").textContent = `${greeting} Today is ${dateTime}`;
-}
-
-// Update every second
-setInterval(updateGreeting, 1000);
-
-// Run immediately
-updateGreeting();
-</script>
+      document.getElementById("greetingMessage").textContent = `${greeting} Today is ${dateTime}`;
+    }
+    setInterval(updateGreeting, 1000);
+    updateGreeting();
+  </script>
 </body>
 </html>
 
-sdftgvhbnjk,ihikyhyiujlujus
+
