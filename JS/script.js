@@ -48,3 +48,27 @@ lightbox.addEventListener('click', (e) => {
     lightbox.style.display = 'none';
   }
 });
+
+// menu.js — toggles hamburger menu
+document.addEventListener("DOMContentLoaded", function(){
+  const hamburger = document.querySelectorAll(".hamburger")[0];
+  const navUl = document.querySelectorAll(".nav-links")[0];
+
+  if (!hamburger || !navUl) return;
+
+  hamburger.addEventListener("click", function(){
+    hamburger.classList.toggle("active");
+    navUl.classList.toggle("mobile");
+  });
+
+  // Close on link click (mobile)
+  navUl.querySelectorAll("a").forEach(a=>{
+    a.addEventListener("click", ()=> {
+      if (window.innerWidth < 900) {
+        hamburger.classList.remove("active");
+        navUl.classList.remove("mobile");
+      }
+    });
+  });
+});
+

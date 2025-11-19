@@ -27,3 +27,5 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   // Optionally, reset form
   this.reset();
 });
+
+
